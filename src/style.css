@@ -1,0 +1,122 @@
+body {
+    background-color: #1D2B64;
+
+}
+
+.todo-list {
+    background: #F09819;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EDDE5D, #F09819);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EDDE5D, #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #1D2B64;
+    margin: auto;
+    font-family: Roboto, sans-serif;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #1D2B64;
+    border-radius: 5px;
+    box-shadow:
+    /* The top layer shadow */
+        0 1px 1px rgba(0,0,0,0.15),
+            /* The second layer */
+        0 10px 0 -5px #eee,
+            /* The second layer shadow */
+        0 10px 1px -4px rgba(0,0,0,0.15),
+            /* The third layer */
+        0 20px 0 -10px #eee,
+            /* The third layer shadow */
+        0 20px 1px -9px rgba(0,0,0,0.15);
+    padding: 30px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px 0;
+    width: 70%;
+    border-bottom: 1px solid #1D2B64;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #333333;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+    outline: 0;
+}
+
+.completedTodos {
+    text-decoration: line-through;
+    color: #203A43;
+    font-style: italic;
+}
+
+.deleteButton {
+    border: none;
+    background-color: transparent;
+    font-family: Roboto, sans-serif;
+    margin-left: 5px;
+}
+
+.deleteButton:hover{
+    border: 1px solid rgb(228, 46, 0);
+    background-color: rgb(228, 46, 0);
+    border-radius: 4px;
+    color: black;
+}
+
+.frontText {
+    font-size: 2em;
+}
+
+
+
+input[type=submit] {
+-webkit-transition-duration: 0.4s; /* Safari */
+background-color: rgb(228, 46, 0);
+transition-duration: 0.4s;
+color: white;
+border: none;
+margin-left: 6px;
+border-radius: 4px;
+text-align: center;
+display: inline;
+}
+
+input[type=submit]:hover{
+background-color: rgba(238, 67, 15, 0.877); /* Green */
+color: white;
+}
+
+.editInput {
+    background-color: transparent;
+    display: block;
+    margin-block-start: 0.93em;
+    margin-block-end: 0.93em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border: none;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #333333;
+}
+
+.editInput:focus {
+    outline: none;
+    align-items: center;
+}
+
+form {
+    display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
